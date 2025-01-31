@@ -9,8 +9,15 @@ phases:
     commands:
       - echo Building the React app...
       - npm run build
+  post_build:
+    commands:
+      - echo Build completed. Preparing for deployment...
 
 artifacts:
   files:
     - '**/*'
-  base-directory: build  # Specifies the output folder for React build
+  base-directory: build  # Specifies the build output directory to deploy
+
+cache:
+  paths:
+    - 'node_modules/**/*'

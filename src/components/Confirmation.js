@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
-import { multiStepContext } from "../StepContext";
+import { multiStepContext } from "../StepContext.js";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import ToastNotification from './ToastNotification';
+import ToastNotification from './ToastNotification.js';
 import { toast } from "react-toastify";
 import "bootstrap/dist/css/bootstrap.min.css";
 

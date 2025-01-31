@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { multiStepContext } from "../StepContext";
+import { multiStepContext } from "../StepContext.js";
 
 const BillingForm = () => {
   const { setStep, userData, setUserData } = useContext(multiStepContext);

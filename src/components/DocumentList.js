@@ -1,11 +1,11 @@
 import React, { useEffect, useState, useContext } from "react";
-import { multiStepContext } from "../StepContext";
+import { multiStepContext } from "../StepContext.js";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { toast } from "react-toastify";
-import ToastNotification from "./ToastNotification";
-import Header from "./Header/Header"; // Import the Header component
-import Footer from "./Footer/Footer"; // Import the Footer component
+import ToastNotification from "./ToastNotification.js";
+import Header from "./Header/Header.js"; // Import the Header component
+import Footer from "./Footer/Footer.js"; // Import the Footer component
 
 const DocumentList = () => {
   const [documentData, setDocumentData] = useState([]);

@@ -1,24 +1,24 @@
 import React, { useContext } from 'react';
 import './index.css';
 import { Routes, Route, useLocation } from 'react-router-dom';
-import DocumentList from './components/DocumentList';
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
-import Login from './components/Login/Login'; 
-import SignUp from './components/Signup/Signup';
-import ForgotPassword from './components/ForgotPassword/ForgotPassword';
-import ContactUS from './components/ContactUS/ContactUS';
-import ResetPassword from './components/ResetPassword/ResetPassword'; // Corrected import
+import DocumentList from './components/DocumentList.js';
+import Header from './components/Header/Header.js';
+import Footer from './components/Footer/Footer.js';
+import Login from './components/Login/Login.js'; 
+import SignUp from './components/Signup/Signup.js';
+import ForgotPassword from './components/ForgotPassword/ForgotPassword.js';
+import ContactUS from './components/ContactUS/ContactUS.js';
+import ResetPassword from './components/ResetPassword/ResetPassword.js'; // Corrected import
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import 'font-awesome/css/font-awesome.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { Stepper, Step, StepLabel } from '@mui/material';
-import UploadForm from './components/UploadForm';
-import DocumentInfo from './components/DocumentInfo';
-import { multiStepContext } from './StepContext';
-import Payment from './components/Payment';
-import Confirmation from './components/Confirmation';
+import UploadForm from './components/UploadForm.js';
+import DocumentInfo from './components/DocumentInfo.js';
+import { multiStepContext } from './StepContext.js';
+import Payment from './components/Payment.js';
+import Confirmation from './components/Confirmation.js';
 
 function App() {
   const { currentStep } = useContext(multiStepContext);

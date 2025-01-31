@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
 import { FaCloudUploadAlt } from "react-icons/fa";
-import { multiStepContext } from "../StepContext";
+import { multiStepContext } from "../StepContext.js";
 
 const FileUploadForm = () => {
   const { setStep, userData = {}, setUserData } = useContext(multiStepContext);
