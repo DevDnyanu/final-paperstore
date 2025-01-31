@@ -1,0 +1,12 @@
+.center-stepper {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center;    /* Center horizontally */
+  margin-top: 20px;       /* Top margin for spacing */
+  margin-bottom: 10px;    /* Bottom margin for spacing */
+}
+
+.stepper-content {
+  width: 100%; /* Matches the stepper width */
+  margin-top: 20px; /* Adds space between stepper and content */
+}
